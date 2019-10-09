@@ -23,3 +23,45 @@ function findMe(){
 
     navigator.geolocation.getCurrentPosition(localizacion, error);
 }
+
+$(document).ready(function(){
+    $("#agregar").on("click", function(){
+
+        var linea = document.createElement("HR");
+        TitulosNuevaLocalidad.appendChild(linea);
+        
+
+        var Localidad = document.createElement("p");
+        var CantidadSillas = document.createElement("p");
+        var Costo = document.createElement("p");
+
+        crearElementosTitulos(Localidad, "Nombre: ");
+        crearElementosTitulos(CantidadSillas, "Cantidad de asientos: ");
+        crearElementosTitulos(Costo, "Costo: ");
+        
+
+
+        var inputLocalidad = document.createElement("input");
+        var inputCantidadSillas = document.createElement("input");
+        var inputCostoLocalidad = document.createElement("input");
+
+        crearElementos(inputLocalidad, "Platinum");
+        crearElementos(inputCantidadSillas, "50");
+        crearElementos(inputCostoLocalidad, "500");
+        
+        
+    });
+
+    function crearElementos(elemento, nombre){
+        elemento.setAttribute("type", "text");
+        elemento.setAttribute("placeholder", nombre);
+        elemento.setAttribute("name", nombre);
+
+        nuevaLocalidad.appendChild(elemento);
+    }
+
+    function crearElementosTitulos(elemento, mensaje){
+        elemento.innerText = mensaje;
+        TitulosNuevaLocalidad.appendChild(elemento);
+    }
+});
