@@ -319,3 +319,27 @@ tr:hover{
   padding: 10px;
   cursor: pointer;
 }
+
+/* ----------------------------------------- ESTILOS PARA LOS USUARIOS ------------------------------- */
+.titulo-usuario {
+  padding-bottom: 35px;
+}
+
+.btn-usuario {
+  padding: 15px;
+  border: 3px solid;
+  margin-bottom: 35px;
+}
+
+.mi-tabla{
+  overflow: auto;
+  width: 50%;
+  padding: 0px;
+  margin: 0px auto;
+  padding-top: 50px;
+}
+
+.mi-tabla th{
+  padding-right: 135px;
+  text-align: center;
+}

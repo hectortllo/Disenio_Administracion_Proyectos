@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crear Evento</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <script type = "text/javascript" src="javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/bootstrap-datepicker.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSXG_yr3Ni-njGrPEjEC9z9u1lzqwmmoA"></script>
+    <script src="javascript/funciones.js"></script>
+    <script src="javascript/creareventos.js"></script>
+</head>
+<body class="body-evento">
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top color ">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Chronos</a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <div class="col text-center titulo-usuario">
+                    <h1>Usuarios</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <div class="row">
+                    <div class="col-12 col-md-6 align-self-center">
+                        <p class="titulos-form" style="text-align: center;">Tipo usuario: </p>
+                    </div>
+                    <div class="col-12 col-md-6 input">
+                        <select>
+                            <option value="volvo">Administrador</option>
+                            <option value="saab">Moderador</option>
+                            <option value="opel">Cliente</option>
+                          </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <div class="row">
+                    <div class="col-12 col-md-4 align-self-center">
+                        <p class="titulos-form" style="text-align: center;">Nombre: </p>
+                    </div>
+                    <div class="col-12 col-md-8 input">
+                        <input type="text" class="form-control" placeholder="Nombre de Usuario" name="nombre-usuario" id="nombre-usuario">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <div class="row">
+                    <div class="col-12 float-right">
+                        <input type="submit" value="Buscar usuario" class="btn btn-primary mb-3 float-md-right btn-usuario">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row d-flex justify-content-center">
+            <div class="col-3 col-md-12">
+                <table class="mi-tabla">
+                    <tr>
+                        <th>Número</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                    </tr>
+            
+                    <tr>
+                        <td>1.</td>
+                        <td>Cristian Archila</td>
+                        <td>cristianzxc16@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>2.</td>
+                        <td>Juan Diego Arriola</td>
+                        <td>juandiegoaw333@hotmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Christian Q</td>
+                        <td>caqp14@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Nidia Miranda</td>
+                        <td>yomaramiranda.nm@gmail.com</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>window.jQuery || document.write('<script src="javascript/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="javascript/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="javascript/popper.min.js"></script>
+    <script src="javascript/ie10-viewport-bug-workaround.js"></script>
+    <script src="javascript/efectos.js"></script>
+    <script src="javascript/daterangepicker.js"></script>
+    <script src="javascript/moment.min.js"></script>
+    
+</body>
+</html>
