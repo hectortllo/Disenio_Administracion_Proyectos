@@ -32,20 +32,24 @@ $(document).ready(function(){
         
 
         var Localidad = document.createElement("p");
+        var numeroFilas = document.createElement("p");
         var CantidadSillas = document.createElement("p");
         var Costo = document.createElement("p");
 
         crearElementosTitulos(Localidad, "Nombre: ");
+        crearElementosTitulos(numeroFilas, "Número de filas: ");
         crearElementosTitulos(CantidadSillas, "Cantidad de asientos: ");
         crearElementosTitulos(Costo, "Costo: ");
         
 
 
         var inputLocalidad = document.createElement("input");
+        var inputNumeroFilas = document.createElement("input");
         var inputCantidadSillas = document.createElement("input");
         var inputCostoLocalidad = document.createElement("input");
 
         crearElementos(inputLocalidad, "Platinum");
+        crearElementos(inputNumeroFilas, "10");
         crearElementos(inputCantidadSillas, "50");
         crearElementos(inputCostoLocalidad, "500");
         
