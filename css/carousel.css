@@ -301,7 +301,7 @@ th, td {
 }
 
 th {
-  background: #009DDC;
+  background: #fe6b46;
   color: #FFF;
 }
 
@@ -332,7 +332,7 @@ tr:hover{
 
 .mi-tabla{
   overflow: auto;
-  width: 50%;
+  width: 100%;
   padding: 0px;
   margin: 0px auto;
   padding-top: 50px;
@@ -344,6 +344,6 @@ tr:hover{
 }
 
 .tipo_usuario-btn{
-  background: orange;
+  background: #f83d7f;
   color: white;
 }
