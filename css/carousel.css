@@ -211,7 +211,6 @@ footer .redes-sociales .contenedor{
 }
 
 .titulos-form{
-  text-align: center;
   font-size: 32px;
 }
 
@@ -223,7 +222,7 @@ footer .redes-sociales .contenedor{
   width: 100%;
   font-size: 22px;
   border-radius: 8px;
-  padding: 16px 18px 16px 51px;
+  padding: 16px 18px 16px;
   /*color: rgb(220, 220, 220);*/
 }
 
@@ -342,4 +341,9 @@ tr:hover{
 .mi-tabla th{
   padding-right: 135px;
   text-align: center;
+}
+
+.tipo_usuario-btn{
+  background: orange;
+  color: white;
 }
